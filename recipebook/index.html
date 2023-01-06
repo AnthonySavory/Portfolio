@@ -3,10 +3,27 @@
   <header>
     <title>Recipe book</title>
     <style>
-      .pancake {
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .Whole {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/sea.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+      }
+      .Head {
+        height: 15%;
         display: flex;
-        flex-direction: column;
-        align-items: left;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
       }
       img {
         width: 200px;
@@ -14,19 +31,26 @@
         margin-right: 10px;
       }
       h1 {
-        color: black;
+        color: rgb(231, 238, 245);
+      }
+      a {
+        cursor: pointer;
+        color: rgb(247, 240, 240);
+      }
+      a:hover {
+        color: blue;
       }
     </style>
   </header>
   <body>
-    <div class="pancake">
-      <h1>Pancake Recipe</h1>
-      <img src="images/pancake (2).jpg" alt="Pancake" />
-      <p>flour</p>
-    </div>
+    <div class="Whole">
+      <div class="Head">
+        <img src="images/pancake (2).jpg" alt="Pancake" />
+        <h1>Recipe book</h1>
+      </div>
 
-    <h2>Bolillo Recipe</h2>
-    <img src="images/bolillo (2).jpg" alt="Bolillo" />
-    <p></p>
+      <a href="Pancake.html">Pancake</a>
+      <a href="BreakfastCasserole.html">BreakfastCasserole</a>
+    </div>
   </body>
 </html>
