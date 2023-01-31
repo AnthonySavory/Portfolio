@@ -7,8 +7,14 @@
         margin: 0;
         padding: 0;
       }
+
       .whole {
         margin: 2%;
+      }
+      .head {
+        color: black;
+        text-align: center;
+        cursor: default;
       }
       a {
         cursor: pointer;
@@ -18,16 +24,55 @@
       a:hover {
         color: blue;
       }
+      img {
+        width: 400px;
+        margin-top: 20px;
+      }
+
+      .recipe {
+        color: black;
+        text-align: center;
+        cursor: default;
+        margin-bottom: 5%;
+        margin-top: 5%;
+      }
+      li {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      h2 {
+        font-size: 30px;
+        font-style: italic;
+      }
+      .steps {
+        margin-top: 5%;
+      }
+
+      h3 {
+        font-size: 30px;
+        font-style: italic;
+      }
     </style>
   </head>
   <body>
     <div class="whole">
       <div class="head">
         <a href="index.html">Home</a>
+        <h1>BBQ Chicken Wings Recipe</h1>
+        <b>Duane and Jennifer Taise</b>
       </div>
+      <center><img src="images/Bbqwings.jpg" alt="BBQ Wings" /></center>
       <div class="recipe">
-        <div class="ingredients"></div>
-        <div class="steps"></div>
+        <div class="ingredients">
+          <h2>Ingredients</h2>
+          <li>1 bottle of BBQ Sauce</li>
+          <li>1 pkg. of chicken wings, cut up</li>
+        </div>
+        <div class="steps">
+          <h3>Steps</h3>
+          <li>cook wings in BBQ Sauce for about 45 minutes</li>
+          <li>stir constantly to prevent burning</li>
+        </div>
       </div>
     </div>
   </body>
